@@ -17,7 +17,7 @@ describe('Verifincando se os links com texto Home, About e Favorite Pokémon est
     expect(aboutLink).toBeInTheDocument();
   });
 
-  it('Favorite Pokémon', () => {
+  it('link Favorite Pokémon', () => {
     renderWithRouter(<App />);
     const favoritePokemon = screen.getByRole('link', { name: /favorite pokémon/i });
     expect(favoritePokemon).toBeInTheDocument();
